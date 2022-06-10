@@ -11,5 +11,14 @@ function writePassword() {
   passwordText.value = password;
 }
 
+// *-------- all code goes below this comment --------*
+
+function generatePassword() {
+  
+
+}
+
+// *-------- all code goes above this comment --------*
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
