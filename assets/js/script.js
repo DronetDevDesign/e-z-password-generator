@@ -59,10 +59,9 @@ function generatePassword() {
     window.alert("You must select at least one character type!");
   };
 
+  // generatePassword();
   return (specialChar + numericChar + lowerChar + upperChar);
 }
-// generatePassword();
-
 // *-------- all code goes above this comment --------*
 
 // Add event listener to generate button
