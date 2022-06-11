@@ -26,6 +26,7 @@ function generatePassword() {
 
 // confirm for special characters
   var specialChar = window.confirm("Click OK to confirm inlcuding special characters");
+
   specialCharArray = ["!", "#", "$", "%", "&", "()", "*", "+", "-", "<", "=", ">", "?", "@"];
   specialChar = specialCharArray[Math.floor(Math.random() * specialCharArray.length)];
   console.log(specialChar);
@@ -41,22 +42,25 @@ function generatePassword() {
 
 // confirm for lowercase characters
   var lowerCaseChars = window.confirm("Click OK to confirm lowercase characters");
-  lowerCaseChars = charArray.toString().toLowerCase();
-  console.log(lowerCaseChars);
+  lowerCaseChars = charArray;
+  var lowerChar = lowerCaseChars[Math.floor(Math.random() * lowerCaseChars.length)];
+  lowerChar = lowerChar.toLowerCase();
+  console.log(lowerChar);
 
 // confirm for uppercase characters
   var upperCaseChars = window.confirm("Click OK to confirm uppercase characters");
-  upperCaseChars = charArray.toString().toUpperCase();
-  console.log(upperCaseChars);
+  upperCaseChars = charArray;
+  // console.log(upperCaseChars);
+  var upperChar = upperCaseChars[Math.floor(Math.random() * upperCaseChars.length)];
+  upperChar = upperChar.toUpperCase();
+  console.log(upperChar);
 
-  // if (!specialCharArray && !numericCharArray && !lowerCaseChars && !upperCaseChars) {
-  //   window.alert("You must select at least one character type!");
-  // };
+  if (!specialCharArray && !numericCharArray && !lowerCaseChars && !upperCaseChars) {
+    window.alert("You must select at least one character type!");
+  };
 
-// contain in local storage
-  var password = localStorage.getItem("password");
+  return (specialChar + numericChar + lowerChar + upperChar);
 }
-
 // generatePassword();
 
 // *-------- all code goes above this comment --------*
