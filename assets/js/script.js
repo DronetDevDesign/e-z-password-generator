@@ -14,22 +14,30 @@ function writePassword() {
 // *-------- all code goes below this comment --------*
 
 function generatePassword() {
-
+  // var passwordLength = parseInt(userInput);
 // input for number of characters
-  var userCharNumber = window.prompt("How many characters would you like your password to contain?");
-  if (userCharNumber >= 8 && userCharNumber <= 128) 
-  {console.log(userCharNumber);
-// alert is characters below 8 or above 128
-  } else {window.alert("Password must be AT LEAST 8 characters and NO MORE THAN 128 characters in length");
-    generatePassword();
-  };
+
+  var userInput = function() {
+    // window.prompt("How many characters would you like your password to contain?");
+    var passwordLength = window.prompt("How many characters would you like your password to contain?");
+    for (i = 8; i <= passwordLength.length; i++) {
+      if (passwordLenght) {
+        parseInt(passwordLength);
+      } else {window.alert("Password must be AT LEAST 8 characters and NO MORE THAN 128 characters in length");
+        generatePassword();
+     };
+    };
+  }
 
 // confirm for special characters
-  var specialChar = window.confirm("Click OK to confirm inlcuding special characters");
+  var confirmSpecialCharacters = window.confirm("Click OK to confirm inlcuding special characters");
 
-  specialCharArray = ["!", "#", "$", "%", "&", "()", "*", "+", "-", "<", "=", ">", "?", "@"];
-  specialChar = specialCharArray[Math.floor(Math.random() * specialCharArray.length)];
-  console.log(specialChar);
+  if (specialCharArray = ["!", "#", "$", "%", "&", "()", "*", "+", "-", "<", "=", ">", "?", "@"]) {
+      confirmSpecialCharacters = specialCharArray[Math.floor(Math.random() * specialCharArray.length)];
+      console.log(confirmSpecialCharacters);
+  } else {
+    null;
+  }
 
 // confirm for numeric characters
   var numericChar = window.confirm("Click OK to confirm including numeric characters");
@@ -59,7 +67,7 @@ function generatePassword() {
     window.alert("You must select at least one character type!");
   };
 
-  return (specialChar + numericChar + lowerChar + upperChar);
+  return (confirmSpecialCharacters + numericChar + lowerChar + upperChar);
 }
 // generatePassword();
 
