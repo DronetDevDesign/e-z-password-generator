@@ -1,39 +1,21 @@
-# e-z-password-generator
-An easy to use password generator for everyone.
+# E-Z Password Generator Website
+## Create a secure password the E-Z way!
 
-# User Story: 
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
+## Purpose:
+DronetDevDesign offers Full-stack Development and Graphic Design in one place. I give my clients the best of both worlds by not only providing the creative graphic design to push their brand to new heights, but also seeing projects through to full-stack development from concept to completion.
 
-# Acceptance Criteria:
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-"!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+<br>
+<div align="left">
+    <img src="./assets/images/e-z-password-generator-screenshot.jpg" width="800px" /> 
+</div>
+<br>
 
+## Website Link:
+https://dronetdevdesign.github.io/Dronet-DevDesign/
 
-# COPYRIGHT:
+## This Website Created Using:
+* HTML
+* CSS
 
-# No License
-
-This file is for informational purposes only and follows the common naming convention of `LICENSE.md` to make it easy to find. No license is implied.
-
-As explained by [choosealicense.com](https://choosealicense.com/no-permission/), when no license is declared:
-
-> [This repository] is under exclusive copyright by default. [You cannot] use, copy, distribute, or modify without being at risk of take-downs, shake-downs, or litigation.
-
----
-© Your own copy right statement here.
+## Contribution:
+Ron Dronet - Full-stack Developer and Graphic Designer
