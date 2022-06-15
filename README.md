@@ -2,7 +2,7 @@
 ## Create a secure password the E-Z way!
 
 ## Purpose:
-This website is to help employees who are required to frequently change their password due to their access requirements at their particular company.
+This website is to help employees who are required to frequently change their password due to their access requirements with their particular company.
 The E-Z Password Generator is a fast efficient way to stay ahead of the game!
 
 <br>

@@ -37,22 +37,12 @@ function generatePassword() {
   var useSpecialCharacters = confirm("Click OK to confirm inlcuding special characters");
       useSpecialCharacters = specialCharacterArray.splice(Math.floor(Math.random() * specialCharacterArray.length), totalInput);
       useSpecialCharacters = useSpecialCharacters.join('').toString();
-  if (useSpecialCharacters) {
-        useSpecialCharacters;
-    } else {
-      return false;
-    }
     // console.log(useSpecialCharacters);
 
     // for numbers array      
   var useNumbers = confirm("Click OK to confirm including numeric characters");
       useNumbers = numberArray.splice(Math.floor(Math.random() * numberArray.length), totalInput);
       useNumbers = useNumbers.join('').toString();
-  if (useNumbers) {
-     useNumbers;
-   } else {
-     return false;
-   }
     // console.log(useNumbers);
 
     // for lowercase array
@@ -60,11 +50,6 @@ function generatePassword() {
       lowerCaseAlphabets = alphabetArray;
       smallLetters = lowerCaseAlphabets.splice(Math.floor(Math.random() * lowerCaseAlphabets.length), totalInput);
       smallLetters = smallLetters.join('').toString().toLowerCase();
-  if (smallLetters) {
-      smallLetters;
-    } else {
-      return false;
-    }
     // console.log(smallLetters);
 
     // for uppercase array
@@ -72,11 +57,6 @@ function generatePassword() {
       upperCaseAlphabets = alphabetArray;
       bigLetters = upperCaseAlphabets.splice(Math.floor(Math.random() * upperCaseAlphabets.length), totalInput);
       bigLetters = bigLetters.join('').toString().toUpperCase();
-  if (bigLetters) {
-      bigLetters;
-    } else {
-      return false;
-    }
     // console.log(bigLetters);
 
     // at least one selection needed
