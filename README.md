@@ -2,7 +2,8 @@
 ## Create a secure password the E-Z way!
 
 ## Purpose:
-DronetDevDesign offers Full-stack Development and Graphic Design in one place. I give my clients the best of both worlds by not only providing the creative graphic design to push their brand to new heights, but also seeing projects through to full-stack development from concept to completion.
+This website is to help employees who are required to frequently change their password due to their access requirements at their particular company.
+The E-Z Password Generator is a fast efficient way to stay ahead of the game!
 
 <br>
 <div align="left">
@@ -14,6 +15,7 @@ DronetDevDesign offers Full-stack Development and Graphic Design in one place. I
 https://dronetdevdesign.github.io/e-z-password-generator/
 
 ## This Website Created Using:
+* Javascript
 * HTML
 * CSS
 

@@ -1,5 +1,3 @@
-// Assignment code here
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -18,7 +16,7 @@ function generatePassword() {
     // console.log(userInputNumber);
 
   var specialCharacterArray = ["!", "#", "$", "%", "&", "()", "*", "+", "-", "<", "=", ">", "?", "@"];
-  //  console.log(specialCharacterArray);
+    //  console.log(specialCharacterArray);
 
   var numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     // console.log(numberArray);
@@ -26,6 +24,7 @@ function generatePassword() {
   var alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     // console.log(alphabetArray);
 
+    // for users total amount of characters wanted
   var totalInput = userInputNumber;
   if (totalInput >= 8 && totalInput <= 128) {
      totalInput;
@@ -34,6 +33,7 @@ function generatePassword() {
     };
     // console.log(totalInput);
 
+    // for special characters array
   var useSpecialCharacters = confirm("Click OK to confirm inlcuding special characters");
       useSpecialCharacters = specialCharacterArray.splice(Math.floor(Math.random() * specialCharacterArray.length), totalInput);
       useSpecialCharacters = useSpecialCharacters.join('').toString();
@@ -43,7 +43,8 @@ function generatePassword() {
       return false;
     }
     // console.log(useSpecialCharacters);
-        
+
+    // for numbers array      
   var useNumbers = confirm("Click OK to confirm including numeric characters");
       useNumbers = numberArray.splice(Math.floor(Math.random() * numberArray.length), totalInput);
       useNumbers = useNumbers.join('').toString();
@@ -52,8 +53,9 @@ function generatePassword() {
    } else {
      return false;
    }
-      // console.log(useNumbers);
+    // console.log(useNumbers);
 
+    // for lowercase array
   var lowerCaseAlphabets = confirm("Click OK to confirm lowercase characters");
       lowerCaseAlphabets = alphabetArray;
       smallLetters = lowerCaseAlphabets.splice(Math.floor(Math.random() * lowerCaseAlphabets.length), totalInput);
@@ -63,8 +65,9 @@ function generatePassword() {
     } else {
       return false;
     }
-      // console.log(smallLetters);
+    // console.log(smallLetters);
 
+    // for uppercase array
   var upperCaseAlphabets = confirm("Click OK to confirm uppercase characters");
       upperCaseAlphabets = alphabetArray;
       bigLetters = upperCaseAlphabets.splice(Math.floor(Math.random() * upperCaseAlphabets.length), totalInput);
@@ -74,21 +77,23 @@ function generatePassword() {
     } else {
       return false;
     }
-      // console.log(bigLetters);
+    // console.log(bigLetters);
 
+    // at least one selection needed
   if (!useSpecialCharacters && !useNumbers && !smallLetters && !bigLetters) {
       alert("You must select at least one character type!");
       }
 
+    // return new password
   var userChoices = [useSpecialCharacters, useNumbers, smallLetters, bigLetters];
   var usersNumberChoice = totalInput;
   var userPassword = userChoices.join('').slice(0, usersNumberChoice);
 
   return userPassword;
 }
-// *-------- all code goes above this comment --------*
+    // *-------- all code goes above this comment --------*
 
-// Add event listener to generate button
+    // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
